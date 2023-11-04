@@ -4,7 +4,8 @@ import MemoryCard from '../Memory-card/MemoryCard'
 import { getCardsPosition, getExistIcons } from './utils'
 import { pairType } from '../Memory-main/MemoryMain';
 
-const imagesContext = import.meta.glob('./../../../public/assets/images/*.{png,jpg,jpeg,gif,svg}');
+// const imagesContext = import.meta.glob('./../../../public/assets/images/*.{png,jpg,jpeg,gif,svg}');
+const imagesContext = import.meta.glob('./images/*.{png,jpg,jpeg,gif,svg}');
 interface IMemoryCards {
   handleClick: (arg0: {position:number, icon:string}) => void
   pairs: pairType[]
