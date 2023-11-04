@@ -12,7 +12,8 @@ interface IMemoryCard {
 }
 
 const MemoryCard: FC<IMemoryCard> = ({card}) => {
-  const bg = card.isSolved ? card.path : ''
+  const bgPath = card.isSolved ? card.path : ''
+  const bg = `./images/${bgPath.split('/')[bgPath.split('/').length - 1]}`
 
   return <StyledCard bg={bg} onClick={card.onClick}></StyledCard>
 }
